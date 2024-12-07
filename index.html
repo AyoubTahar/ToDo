@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            TO DO LIST
+        </h1>
+        <div id="add-new-task">
+            <!-- Étiquette et champ de saisie -->
+            <label for="new-task-input">Ajouter une nouvelle tâche :</label>
+            <input type="text" id="new-task-input" class="new-task" placeholder="Entrez une tâche">
+            
+            <!-- Bouton pour ajouter la tâche -->
+            <button id="add-task-button">Ajouter</button>
+        </div>
+    </header>
+    <section>
+        <div id="task-list">
+            
+        </div>
+    </section>
+    <footer>
+        <div class="number-of-task">
+            <p>Nombre de tâches</p>
+        </div>
+        <div class="clear-all-task">
+            <p>Effacer la liste</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

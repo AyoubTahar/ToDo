@@ -1,0 +1,103 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tout horizontalement */
+    min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    background-color: #bbd1ce;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Largeur dynamique en fonction de la taille de l'écran */
+    max-width: 600px; /* Largeur maximale pour ne pas dépasser une taille fixe */
+    margin: 20px 0; /* Espacement vertical */
+    padding: 10px;
+    background-color: #eee2de;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+#add-new-task{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Largeur identique au header */
+    max-width: 600px;
+    background-color: #eee2de;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#task-list{
+    width: 100%;
+    background-color: #eee2de;
+}
+
+.task-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: #fa9494 5px 5px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+.task-item.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.clear-all-task p {
+    color: #ff0000;
+    transition:  transform 0.2s ease;
+  }
+  .clear-all-task p:hover {
+    cursor: pointer;
+    color: #d32f2f; /* Rouge plus sombre */
+    transform: scale(1.05); /* Agrandissement léger */
+    }
+
+footer {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee2de;
+    padding: 10px;
+    margin: 20px 0; /* Espacement vertical */
+    border-radius: 10px;
+}
+
+.delete-task {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .task-item.appear.completed{
+    background-color:  #bbd1ce;
+    transition: 0.8s;
+  }
